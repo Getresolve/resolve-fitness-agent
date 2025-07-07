@@ -744,3 +744,10 @@ async def main():
         # Success message
         print("\n🎉 SUCCESS! Your lead generation agent is working perfectly!")
         print("📈
+        print("📈 Continue building momentum and let your fitness brand shine!\n")
+    except Exception as e:
+        logger.error(f"❌ An error occurred in the main function: {e}")
+        print("\n⚠️ Something went wrong. Check 'lead_agent.log' for details.\n")
+
+if __name__ == "__main__":
+    asyncio.run(main())
