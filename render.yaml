@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: resolve-lead-agent
+    env: python
+    schedule: "0 8 * * *"  # Run daily at 8am UTC
+    startCommand: python main.py
+    plan: free
